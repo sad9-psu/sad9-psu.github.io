@@ -113,10 +113,12 @@
 		  if($panel.attr("aria-hidden") == "true") {
   		  $panel.attr({"aria-hidden": false});
 				$me.attr({ "aria-expanded": true });
+				$me.addClass('expanded');
 
 		  } else {
   		  $panel.attr({"aria-hidden": true});
   		  $me.attr({ "aria-expanded": false });
+				$me.removeClass('expanded');
 
 		  }
 
