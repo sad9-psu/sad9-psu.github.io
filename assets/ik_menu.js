@@ -95,6 +95,8 @@
       ;
 		
       if (!plugin.selected.length) { 
+	  console.log(plugin.menuitems);
+
           plugin.menuitems
               .eq(0)
               .attr({
